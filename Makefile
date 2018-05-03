@@ -31,8 +31,8 @@ COVFLAGS = --coverage
 endif
 
 ifeq ($(PIE),1)
-PIE_CFLAGS=-fPIE -fPIC
-PIE_LDFLAGS=-pie
+PIE_CFLAGS := -fPIE -fPIC
+PIE_LDFLAGS := -pie
 endif
 
 ifneq ($(NO_COMPAT),1)
